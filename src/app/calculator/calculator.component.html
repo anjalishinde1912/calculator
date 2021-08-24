@@ -1,8 +1,11 @@
+
+<div class= "main">    
 <h2>CALCULATOR</h2>
 <div class="calculator">
-<div>
+<div class="inputarea">
     <input type="text" value="{{value}}">
 </div>
+<div class= "btn-container">
 <div>
     <button *ngFor="let num of numberGroups" (click)="onbuttonpress(num)" class="btn" type="button">{{num}}</button>
 </div>
@@ -14,5 +17,7 @@
 </div>
 <div>
     <button *ngFor="let num of numberGroups3" (click)="onbuttonpress(num)" class="btn" type="button">{{num}}</button>
+</div>
+</div>
 </div>
 </div>
