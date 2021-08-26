@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
-  styleUrls: ['./calculator.component.css']
+  styleUrls: ['./calculator.component.scss']
 })
 export class CalculatorComponent {
   value:string = '0';
-  numberGroups =[1,2,3,'+'];
-  numberGroups1 =[4,5,6,'-'];
-  numberGroups2 =[7,8,9,'*'];
-  numberGroups3 =[0,'/','=','c'];
+  numberGroups =[1,2,3,4];
+  numberGroups1 =[5,6,7,8];
+  numberGroups2 =[9,0,'+','-'];
+  numberGroups3 =['*','/','=','c'];
   readyForNewInput = true;
   oldvalue='';
   lastoperator='*';

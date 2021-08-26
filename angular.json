@@ -109,5 +109,10 @@
       }
     }
   },
+  "schematics": {
+    "@schematics/angular:calculator": {
+      "styleext": "scss"
+    }
+  },
   "defaultProject": "Hello-World"
 }
