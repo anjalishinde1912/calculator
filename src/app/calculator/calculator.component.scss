@@ -45,6 +45,7 @@ h2 {
     border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(149, 148, 149);
+    color: black;
   }
 
   .btn-container {
@@ -53,7 +54,7 @@ h2 {
   }
 
   .btn:hover  {
-     background:linear-gradient(to right, rgb(231, 40, 40), rgb(131, 207, 233));  
+     background:linear-gradient(to right, rgb(85, 65, 65), rgb(109, 192, 219));  
      box-shadow:white;
      box-shadow: 4px 4px 12px 4px;
   }
