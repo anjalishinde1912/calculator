@@ -1,7 +1,7 @@
 @mixin calculatormedia {
   display: grid;
   grid-template-rows: 3;
-  grid-template-columns: repeat(auto-fit,1);
+  grid-template-columns: repeat(auto-fit,3);
 }
 
 @mixin buttonformat {
@@ -79,6 +79,7 @@ h2 {
     @include calculatormedia;
   }
   
+  
   .btn {
     display: inline-grid;
     grid-template-columns: 4;
@@ -124,35 +125,48 @@ h2 {
   }
 }
 
-@media screen and (max-width: 682px) {
+@media screen and (max-width: 684px) {
+  .calculator {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 20% 60% 20%;
+  }
+  .btn {
+    display: inline-grid;
+    grid-template-columns: repeat(1,20px);
+    grid-template-rows:repeat(1,20px);
+    grid-auto-flow: column;
+    margin: 5px;
+    padding: 12px;
+    font-size: 18px;
+}
+}
+
+
+@media screen and (max-width: 384px) {
   .calculator {
     @include calculatormedia;
   }
   .btn {
     display: inline-grid;
-    grid-template-columns: repeat(1,30px);
-    grid-template-rows:repeat(1,30px);
+    grid-template-columns: repeat(1,20px);
+    grid-template-rows:repeat(1,20px);
+    grid-auto-flow: column;
     margin: 5px;
     padding: 12px;
     font-size: 18px;
-  }
-  h2 {
-    margin-left: 20%;
 }
-  .calculator {
-    display: inline-block; 
-
-    .inputfield {
-      width:80vw;
-    }
+.calculator {
+  display: inline-block; 
   
-    .btn-container {
-      width:80vw;
-    }
+
+  .inputfield {
+    width:80vw;
   }
 
+  .btn-container {
+    width:80vw;
+    place-items: center;
+  }
 }
-
-
-
-
+}
