@@ -19,7 +19,7 @@ h2 {
 .calculator {
   display: grid;
   grid-template-rows: 3;
-  grid-template-columns: 25% 40% 25%;
+  grid-template-columns: 30% 40% 30%;
 
   .header {
     grid-row-start: 1;
@@ -45,7 +45,7 @@ h2 {
     border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(149, 148, 149);
-    color: black;
+
   }
 
   .btn-container {
