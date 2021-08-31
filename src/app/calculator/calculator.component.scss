@@ -85,8 +85,8 @@ h2 {
     display: inline-grid;
     grid-template-columns: 4;
     grid-auto-flow: column;
-    grid-template-columns: repeat(1,40px);
-    grid-template-rows:repeat(1,40px);
+    grid-template-columns: repeat(1,55px);
+    grid-template-rows:repeat(1,55px);
     margin: 20px;
     padding: 20px;
 }
@@ -144,17 +144,17 @@ h2 {
 }
 
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 434px) {
   .calculator {
     @include calculatormedia;
   }
   .btn {
     display: inline-grid;
-    grid-template-columns: repeat(1,20px);
-    grid-template-rows:repeat(1,20px);
+    grid-template-columns: repeat(1,15px);
+    grid-template-rows:repeat(1,15px);
     grid-auto-flow: column;
     margin: 5px;
-    padding: 12px;
+    padding: 10px;
     font-size: 18px;
 }
 .calculator {
@@ -163,6 +163,8 @@ h2 {
 
   .inputfield {
     width:80vw;
+    height: 40px;
+    font-size: 30px;
   }
 
   .btn-container {
