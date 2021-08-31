@@ -92,20 +92,20 @@ h2 {
 }
 }
 
-@media screen and (max-width: 1162px) {
+@media screen and (max-width: 1450px) {
   .calculator {
     @include calculatormedia;
   }
   
   .btn {
-    grid-template-columns: repeat(1,40px);
-    grid-template-rows:repeat(1,40px);
+    grid-template-columns: repeat(1,45px);
+    grid-template-rows:repeat(1,45px);
     font-size: 23px;
     @include buttonformat;
   }
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1013px) {
   .btn {
     grid-template-columns: repeat(1,25px);
     grid-template-rows:repeat(1,25px);
