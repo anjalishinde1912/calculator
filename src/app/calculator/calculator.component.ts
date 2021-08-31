@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CalculatorComponent {
   value:string = '0';
-  numberGroups =[1,2,3,4];
-  numberGroups1 =[5,6,7,8];
-  numberGroups2 =[9,0,'+','-'];
-  numberGroups3 =['*','/','=','c'];
+  numberGroups =[1,2,3,'+'];
+  numberGroups1 =[4,5,6,'-'];
+  numberGroups2 =[7,8,9,'*'];
+  numberGroups3 =[0,'AC','=','/'];
   readyForNewInput = true;
   oldvalue='';
   lastoperator='*';
@@ -30,7 +30,7 @@ export class CalculatorComponent {
         this.readyForNewInput=false;
       }
       
-      else if(num ==="c") {
+      else if(num ==="AC") {
         this.value = '0';
         this.readyForNewInput=true;
       }

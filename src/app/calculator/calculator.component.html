@@ -1,29 +1,37 @@
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<div class="calculator">
-    <div class="header">
-    <h2>CALCULATOR</h2>
+    <div class="calculator">
+        <div class="header page-header">
+            <h2>CALCULATOR</h2>
+        </div>
+        <div class="inputarea">
+            <input disabled class="input-group input-group-sm col-sm-12 m-0 p-0 inputfield" type="text"
+                value="{{value}}">
+        </div>
+        <div class="btn-container ">
+            <div class="firstrow">
+                <button *ngFor="let num of numberGroups" (click)="onbuttonpress(num)"
+                    class="btn btn btn-secondary btn-lg" type="button">{{num}}</button>
+            </div>
+            <div class="firstrow">
+                <button *ngFor="let num of numberGroups1" (click)="onbuttonpress(num)"
+                    class="btn btn btn-secondary btn-lg" type="button">{{num}}</button>
+            </div>
+            <div class="firstrow">
+                <button *ngFor="let num of numberGroups2" (click)="onbuttonpress(num)"
+                    class="btn btn btn-secondary btn-lg" type="button">{{num}}</button>
+            </div>
+            <div class="firstrow">
+                <button *ngFor="let num of numberGroups3" (click)="onbuttonpress(num)"
+                    class="btn btn btn-secondary btn-lg" type="button">{{num}}</button>
+            </div>
+        </div>
     </div>
-<div class="inputarea">
-    <input disabled class="inputfield" type="text" value="{{value}}">
-</div>
-<div class= "btn-container">
-<div class="firstrow">
-    <button *ngFor="let num of numberGroups" (click)="onbuttonpress(num)" class="btn" type="button">{{num}}</button>
-</div>
-<div class="firstrow">
-    <button *ngFor="let num of numberGroups1" (click)="onbuttonpress(num)" class="btn" type="button">{{num}}</button>
-</div>
-<div class="firstrow">
-    <button *ngFor="let num of numberGroups2" (click)="onbuttonpress(num)" class="btn" type="button">{{num}}</button>
-</div>
-<div class="firstrow">
-    <button *ngFor="let num of numberGroups3" (click)="onbuttonpress(num)" class="btn" type="button">{{num}}</button>
-</div>
-</div>
-</div>
 </body>
+
 </html>
