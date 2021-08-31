@@ -85,10 +85,10 @@ h2 {
     display: inline-grid;
     grid-template-columns: 4;
     grid-auto-flow: column;
-    grid-template-columns: repeat(1,55px);
-    grid-template-rows:repeat(1,55px);
+    grid-template-columns: repeat(1,40px);
+    grid-template-rows:repeat(1,40px);
     margin: 20px;
-    padding: 18px;
+    padding: 20px;
 }
 }
 
