@@ -10,7 +10,7 @@ export class CalculatorComponent {
   numberGroups =[1,2,3,'+'];
   numberGroups1 =[4,5,6,'-'];
   numberGroups2 =[7,8,9,'*'];
-  numberGroups3 =[0,'AC','=','/'];
+  numberGroups3 =[0,'c','=','/'];
   readyForNewInput = true;
   oldvalue='';
   lastoperator='*';
@@ -30,7 +30,7 @@ export class CalculatorComponent {
         this.readyForNewInput=false;
       }
       
-      else if(num ==="AC") {
+      else if(num ==="c") {
         this.value = '0';
         this.readyForNewInput=true;
       }
