@@ -51,6 +51,10 @@
 
 
 @media screen and (max-width: 400px) {
+  .inputfield {
+    width: 100%;
+    font-size: 30px;
+  }
   .btn {
     font-size: 30px;
   }
@@ -91,7 +95,7 @@
   .calculator {
     display: grid;
     grid-template-rows: 10% 10% 75% ;
-    grid-template-columns: 30% 50% 30%;
+    grid-template-columns: 30% 40% 30%;
     background-color:white;
     border: none;
     
@@ -114,7 +118,7 @@
     width: 100%;
     height: 100%;
     border-radius: none;
-    font-size: 60px;
+    font-size: 50px;
    }
  
   .btn-container {
@@ -142,6 +146,6 @@
   }
 
   .btn {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
