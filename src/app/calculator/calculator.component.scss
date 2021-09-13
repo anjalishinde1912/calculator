@@ -65,33 +65,34 @@
   
 }
 
-@media screen and (min-width: 700px) and (max-width:1000px) {
+@media screen and (min-width: 700px) and (max-width:1030px) {
   .header {
     text-align: center;
     padding: 15px;
   }
   .inputfield {
     width: 100%;
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .row  {
     display: grid;
     grid-template-columns: repeat(30px,4);
-    height: 17vh;
+    height: 16vh;
     padding: 10px;
     margin: 16px;
-    grid-gap: 50px;
+    grid-gap: 60px;
     border-radius: 10px;
+    margin-top: 35px;
   }
 
   .btn {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1030px) {
   .calculator {
     display: grid;
     grid-template-rows: 10% 10% 75% ;
